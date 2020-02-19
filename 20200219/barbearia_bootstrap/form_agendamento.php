@@ -18,10 +18,10 @@
                                 <a class="nav-link" href="index.php"> Home <span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                <a class="nav-link" href="form_agendamento.php">agendar</a>
+                                <a class="nav-link" href="form_agendamento.php">Agendar</a>
                                 </li>
 								<li class="nav-item">
-                                <a class="nav-link" href="lista_agendamento.php">lista</a>
+                                <a class="nav-link" href="lista_agendamento.php">Lista</a>
                                 </li>
                             </li>';
                         ?>
