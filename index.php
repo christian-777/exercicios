@@ -8,5 +8,7 @@
 		<p><h1>pagina com links dos meus exercicios<h1><p>
 		<hr />
 		<a href="20200219/barbearia_bootstrap"> 20200219 - Barbearia</a>
+		<hr />
+		<a href="20200304/exercicio1.php"> exercicio extra</a>
 	</body>
 </html>

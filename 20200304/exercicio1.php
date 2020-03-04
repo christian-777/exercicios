@@ -11,19 +11,39 @@
                     mensagem= "faltou digitar o nome!!";
                     alert(mensagem);
                 }
+                else
+                {
+                    mensagem= "já digitou o nome ('"+valor1+"')!!";
+                    alert(mensagem);
+                }
                 if(valor2=="")
                 {
-                    mensagem= "faltou digitar o email!!";
+                    mensagem= "faltou digitar o email !!";
+                    alert(mensagem);
+                }
+                else
+                {
+                    mensagem= "já digitou o email ('"+valor2+"')!!";
                     alert(mensagem);
                 }
                 if(valor3=="")
                 {
-                    mensagem= "faltou digitar o sexo!!";
+                    mensagem= "faltou digitar o sexo !!";
+                    alert(mensagem);
+                }
+                else
+                {
+                    mensagem= "já digitou o sexo ('"+valor3+"')!!";
                     alert(mensagem);
                 }
                 if(valor4=="")
                 {
-                    mensagem= "faltou digitar a data de nascimento!!";
+                    mensagem= "faltou digitar a data de nascimento!! ";
+                    alert(mensagem);
+                }
+                else
+                {
+                    mensagem= "já digitou a data de nascimento ('"+valor3+"')!!";
                     alert(mensagem);
                 }
             }
