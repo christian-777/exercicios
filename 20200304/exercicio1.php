@@ -6,46 +6,48 @@
         <script>
             function validar(valor1, valor2, valor3, valor4)
             {
+                mensagem="";
                 if(valor1=="")
                 {
-                    mensagem= "faltou digitar o nome!!";
-                    alert(mensagem);
+                    mensagem+= "faltou digitar o nome!! \n";
+                    
                 }
                 else
                 {
-                    mensagem= "já digitou o nome ('"+valor1+"')!!";
-                    alert(mensagem);
+                    mensagem+= "já digitou o nome ('"+valor1+"')!! \n";
+                    
                 }
                 if(valor2=="")
                 {
-                    mensagem= "faltou digitar o email !!";
-                    alert(mensagem);
+                    mensagem+= "faltou digitar o email !!\n";
+                   
                 }
                 else
                 {
-                    mensagem= "já digitou o email ('"+valor2+"')!!";
-                    alert(mensagem);
+                    mensagem+= "já digitou o email ('"+valor2+"')!!\n";
+                    
                 }
                 if(valor3=="")
                 {
-                    mensagem= "faltou digitar o sexo !!";
-                    alert(mensagem);
+                    mensagem+= "faltou digitar o sexo !!\n";
+                   
                 }
                 else
                 {
-                    mensagem= "já digitou o sexo ('"+valor3+"')!!";
-                    alert(mensagem);
+                    mensagem+= "já digitou o sexo ('"+valor3+"')!!\n";
+                    
                 }
                 if(valor4=="")
                 {
-                    mensagem= "faltou digitar a data de nascimento!! ";
-                    alert(mensagem);
+                    mensagem+= "faltou digitar a data de nascimento!! \n";
+                   
                 }
                 else
                 {
-                    mensagem= "já digitou a data de nascimento ('"+valor3+"')!!";
-                    alert(mensagem);
+                    mensagem+= "já digitou a data de nascimento ('"+valor3+"')!!\n";
+                    
                 }
+                alert(mensagem);
             }
         </script>
     </head>
@@ -62,6 +64,7 @@
             <p>
                 <label>Sexo:</label>
                 <select name ="sexo" >
+                    <option value="">::selecione::</option>
                     <option value="masculino">masculino</option>
                     <option value="feminino">feminino</option>
                     <option value="indefinido">indefinido</option>
