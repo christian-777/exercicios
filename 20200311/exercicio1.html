@@ -1,0 +1,161 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <script>
+            var cont = 0;
+         
+            function validar(valor1,valor2,valor3,valor4,valor5,valor6,valor7,valor8,valor9)
+            {
+               
+                
+                    if(valor1 == valor2 && valor2 == valor3 && valor3 != "")
+                    {
+                        
+                        if(valor1 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                        
+                    }
+                    if(valor4 == valor5 && valor5 == valor6 && valor6 != "")
+                    {
+                        if(valor4 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                        
+                    }
+                    if(valor7 == valor8 && valor8 == valor9 && valor9 != "")
+                    {
+                        if(valor1 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                       
+                    }
+                    if(valor1 == valor4 && valor4 == valor7 && valor7 != "")
+                    {
+                        if(valor1 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                        
+                    }
+                    if(valor2 == valor5 && valor5 == valor8 && valor8 != "")
+                    {
+                        if(valor2 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                       
+                    }
+                    if(valor3 == valor6 && valor6 == valor9 && valor9 != "")
+                    {
+                        if(valor3 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                        
+                    }
+                    if(valor1 == valor5 && valor5 == valor9 && valor9 != "")
+                    {
+                        if(valor1 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                       
+                    }
+                    if(valor3 == valor5 && valor5 == valor7 && valor7 != "")
+                    {
+                        if(valor1 == "X")
+                        {
+                            alert("Jogador 1 ganhou!!");
+                        }
+                        else
+                        {
+                            alert("Jogador 2 ganhou!!");
+                        }
+                       
+                    }
+                
+            }
+
+            function validar_uni(valor)
+            {
+                if(valor == "X" || valor == "O")
+                {
+                    soma=cont%2;
+                    if((soma== 0 && valor=="X") || (soma == 1 && valor == "O"))
+                    {
+                        cont++;
+                        //validar(document.tabela.a.value, document.tabela.b.value, document.tabela.c.value, document.tabela.d.value, document.tabela.e.value, document.tabela.f.value, document.tabela.g.value, document.tabela.h.value, document.tabela.i.value);
+                    }
+                    else
+                    {
+                            alert("nao é sua vez!!!" + cont + valor);
+                    }
+                }
+                else
+                {
+                    if(valor != "")
+                    {
+                        alert("Jogada Invalida!!!");
+                    }
+                }
+                
+            }
+        </script>
+    </head>
+    <body>
+        <form name="tabela">
+        <table border="1" >
+            <tr>
+                <td><input type="text" onchange="validar_uni(this.value)" name="a" id="a" placeholder="X ou O"/></td>
+                <td><input type="text" onchange="validar_uni(this.value)" name="b" placeholder="X ou O"/></td>
+                <td><input type="text" onchange="validar_uni(this.value)" name="c" placeholder="X ou O"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" onchange="validar_uni(this.value)" name="d" placeholder="X ou O"/></td>
+                <td><input type="text" onchange="validar_uni(this.value)" name="e" placeholder="X ou O"/></td>
+                <td><input type="text" onchange="validar_uni(this.value)" name="f" placeholder="X ou O"/></td>
+            </tr>
+            <tr>
+                <td><input type="text" onchange="validar_uni(this.value)" name="g" placeholder="X ou O"/></td>
+                <td><input type="text" onchange="validar_uni(this.value)" name="h" placeholder="X ou O"/></td>
+                <td><input type="text" onchange="validar_uni(this.value)" name="i" placeholder="X ou O"/></td>
+            </tr>
+        </table>
+        </form>
+        <input type="button" value="jogar" onclick="validar(document.tabela.a.value, document.tabela.b.value, document.tabela.c.value, document.tabela.d.value, document.tabela.e.value, document.tabela.f.value, document.tabela.g.value, document.tabela.h.value, document.tabela.i.value);"/>
+        <a href="exercicio1.html">jogar novamente</a>
+    </body>
+</html>
