@@ -10,5 +10,7 @@
 		<a href="20200219/barbearia_bootstrap"> 20200219 - Barbearia</a>
 		<hr />
 		<a href="20200304/exercicio1.php"> exercicio extra</a>
+		<hr />
+		<a href="20200311/exercicio1.php"> exercicio jogo da velha</a>
 	</body>
 </html>
